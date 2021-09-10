@@ -124,7 +124,7 @@ export default function Home() {
             { (keyword) && ( 
                 Array.isArray(orderedPlugins)
                     && ( orderedPlugins.length > 1 ) ? orderedPlugins.map(plugin => {
-                    return <Plugin plugin={plugin} />
+                    return <Plugin key={plugin.name} plugin={plugin} />
                     }) : <h2 className={styles.message} >No plugins found</h2>
                 )
             }
