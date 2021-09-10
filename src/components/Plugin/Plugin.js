@@ -4,7 +4,7 @@ import Link from 'next/link';
 export default function Plugin({plugin}) {
     return (
         <ul className={styles.listWrapper} key={plugin.name}>
-            <li><a target="_blank" href={`https://wordpress.org/plugins/${plugin.slug}`}>{plugin.name}</a></li>
+            <li><a rel="noreferrer" target="_blank" href={`https://wordpress.org/plugins/${plugin.slug}`}>{plugin.name}</a></li>
             <li>{plugin.ratings[5].toLocaleString()}</li>
             <li>{plugin.active_installs.toLocaleString()}</li>
             <li>{plugin.last_updated}</li>
