@@ -1,0 +1,12 @@
+.search {
+    display: flex;
+    margin: 0 auto;
+    border: .25rem black solid;
+    width: 50%;
+    height: 4rem;
+    background-color: var(--bg-primary);
+    margin-bottom: 8rem;
+    font-size: 1.75rem;
+    font-weight: bold;
+    
+}

@@ -1,0 +1,20 @@
+.listWrapper {
+    // display: flex;
+    // justify-content: space-between;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    font-weight: bold;
+    border: .25rem black solid;
+    padding: 1.25rem;
+    background-color: var(--bg-primary);
+    margin: 0;
+    border-bottom: 0;
+
+    li {
+        &:first-child {
+            text-align: start;
+        }
+        text-align: center;
+        list-style: none;
+    }
+}
